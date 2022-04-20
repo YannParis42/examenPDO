@@ -10,21 +10,23 @@ try{
 
 // Creation Table---------------------------------------------------------------------------------------------------
 
-$db->exec('CREATE TABLE chemical 
+$db->exec('CREATE TABLE planet 
 (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    name VARCHAR(255),
-    symbol VARCHAR(255),
-    atomic_number INT,
-    ordinary_state VARCHAR(255),
-    fusion_point FLOAT,
-    family VARCHAR(255),
-    image_path VARCHAR(255)
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(7),
+    type VARCHAR(10),
+    diametre INT(9),
+    gravite FLOAT,
+    lien_nasa VARCHAR(180)
 )');
 
-$db->exec("INSERT INTO chemical(name, symbol, atomic_number, ordinary_state, fusion_point, family, image_path) VALUES 
-('Plomb', 'Pb', 82, 'solide', 327.46, 'Métal pauvre','Assets/Images/imagePlomb.jpg'),
-('Etain', 'Sn', 50, 'solide', 231.928,'Métal pauvre','Assets/Images/imageEtain.jpg'),
-('Or', 'Au', 79, 'solide', 1064.18, 'Métal de transition','Assets/Images/imageOr.jpg'),
-('Fer', 'Fe', 26, 'solide ferromagnétique', 1538, 'Métal de transition','Assets/Images/imageFer.jpg')
-"); 
+// $db->exec("INSERT INTO planet(nom, type, diametre, gravite, lien_nasa) VALUES 
+// ('Mercure', 'Tellurique', 4879, 3.7, 'https://solarsystem.nasa.gov/planets/mercury'),
+// ('Venus', 'Tellurique', 12104, 8888, 'https://solarsystem.nasa.gov/planets/venus'),
+// ('Terre', 'Tellurique', 12576, 9.79, 'https://solarsystem.nasa.gov/planets/earth'),
+// ('Mars', 'Tellurique', 6792, 3.71, 'https://solarsystem.nasa.gov/planets/mars'),
+// ('Jupiter', 'Gazeuse', 142984, 24.79, 'https://solarsystem.nasa.gov/planets/jupiter'),
+// ('Saturne', 'Gazeuse', 120536, 10.44, 'https://solarsystem.nasa.gov/planets/saturn'),
+// ('Uranus', 'Gazeuse', 51118, 8.87, 'https://solarsystem.nasa.gov/planets/uranus'),
+// ('Neptune', 'Gazeuse', 49528, 11.15, 'https://solarsystem.nasa.gov/planets/neptune')
+// "); 
