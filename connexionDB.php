@@ -20,6 +20,7 @@ $db->exec('CREATE TABLE planet
     lien_nasa VARCHAR(180)
 )');
 
+// Données des planètes
 // $db->exec("INSERT INTO planet(nom, type, diametre, gravite, lien_nasa) VALUES 
 // ('Mercure', 'Tellurique', 4879, 3.7, 'https://solarsystem.nasa.gov/planets/mercury'),
 // ('Venus', 'Tellurique', 12104, 8888, 'https://solarsystem.nasa.gov/planets/venus'),
