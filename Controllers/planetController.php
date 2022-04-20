@@ -91,7 +91,7 @@ if ( isset($_GET['page']) && $_GET['page'] === 'planet') {
     }//Si le $_GET  a la valeur tellurique
     elseif (isset($_GET['tellurique'])){     
             
-        if ($planet = PlanetManager::getAllTellurique()) {
+        if ($planetList = PlanetManager::getAllTellurique()) {
             require_once 'Views/planetsView.php';
         } else {
             require_once 'Views/errorView.php';
@@ -99,7 +99,7 @@ if ( isset($_GET['page']) && $_GET['page'] === 'planet') {
     ///Si le $_GET  a la valeur gazeuse
     }elseif (isset($_GET['gazeuse']) ) {     
         
-        if ($planet = PlanetManager::getAllGazeuse()) {
+        if ($planetList = PlanetManager::getAllGazeuse()) {
             require_once 'Views/planetsView.php';
         } else {
             require_once 'Views/errorView.php';

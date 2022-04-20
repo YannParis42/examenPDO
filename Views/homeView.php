@@ -12,6 +12,6 @@
 
 <div class="m-2">
     <a class="btn btn-success" href="?page=planet">Liste des Planètes</a>
-    <a class="btn btn-success" href="?page=tellurique">Liste des Planètes telluriques</a>
-    <a class="btn btn-success" href="?page=gazeuse">Liste des Planètes gazeuses</a>
+    <a class="btn btn-success" href="?page=planet&tellurique">Liste des Planètes telluriques</a>
+    <a class="btn btn-success" href="?page=planet&gazeuse">Liste des Planètes gazeuses</a>
 </div>
