@@ -6,7 +6,7 @@ ob_start(); ?>
 
 <div class="container mt-3">
     <h1>Liste des planètes : </h1>
-    <a class="btn btn-success mb-2" href="?">accueil</a><br>
+    <a class="btn btn-success mb-2" href="?">Accueil</a><br>
     <a class="btn btn-success" href="?page=planet&action=insert">Ajouter</a>
 </div>
 

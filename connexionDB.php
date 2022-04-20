@@ -15,7 +15,7 @@ $db->exec('CREATE TABLE planet
     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nom VARCHAR(7),
     type VARCHAR(10),
-    diametre INT(9),
+    diametre MEDIUMINT(9),
     gravite FLOAT,
     lien_nasa VARCHAR(180)
 )');

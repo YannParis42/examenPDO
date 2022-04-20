@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `planet` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(7) DEFAULT NULL,
   `type` varchar(10) DEFAULT NULL,
-  `diametre` int(9) DEFAULT NULL,
+  `diametre` mediumint(9) DEFAULT NULL,
   `gravite` float DEFAULT NULL,
   `lien_nasa` varchar(180) DEFAULT NULL,
   PRIMARY KEY (`id`)

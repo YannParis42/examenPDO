@@ -1,7 +1,7 @@
 <!-- Affiche la vue d'accueil -->
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <h1 class="mt-4 text-success">PARIS Yann PDO</h1>
+        <h1 class="mt-4 text-success">Examen PDO de PARIS Yann</h1>
         <form class="d-flex" action="index.php">
             <input type="text" class="form-control me-2" name="nom" placeholder="Rechercher une planète">
 
